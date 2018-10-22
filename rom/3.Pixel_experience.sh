@@ -1,12 +1,12 @@
 # move to folder to download
 cd ~/HDD/Android
 
-if ![-d "~/HDD/Android/AEX_P"]; then
+if [-d "~/HDD/Android/PEX_P"]; then
   # make a new folder to download aex source and move to that folder
-  mkdir AEX_P && cd AEX_P
+  mkdir PEX_P && cd PEX_P
 
   # repo init with Aosp extended pie source
-  repo init -u git://github.com/AospExtended/manifest.git -b 9.x
+  repo init -u https://github.com/PixelExperience/manifest -b pie
 fi
 
 # repo sync(in my computer, I use -j16 option, you can modify that option by the number of core)
