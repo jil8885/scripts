@@ -1,7 +1,7 @@
 # move to folder to download
 cd ~/HDD/Android
 
-if [-d "~/HDD/Android/PEX_P"]; then
+if [! -d "~/HDD/Android/PEX_P"]; then
   # make a new folder to download aex source and move to that folder
   mkdir PEX_P && cd PEX_P
 

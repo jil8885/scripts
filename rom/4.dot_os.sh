@@ -1,7 +1,7 @@
 # move to folder to download
 cd ~/HDD/Android
 
-if ![-d "~/HDD/Android/dot_P"]; then
+if [! -d "~/HDD/Android/dot_P"]; then
   # make a new folder to download aex source and move to that folder
   mkdir dot_P && cd dot_P
 
