@@ -14,3 +14,5 @@ sudo chmod a+r /etc/udev/rules.d/51-android.rules
 if ! test -d "$HOME/HDD/Android";
   then mkdir -p ~/HDD/Android
 fi
+
+sudo chmod +x *.sh
