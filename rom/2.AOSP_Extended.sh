@@ -1,3 +1,4 @@
+#!/bin/bash
 # move to folder to download
 cd ~/HDD/Android
 
