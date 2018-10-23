@@ -1,10 +1,10 @@
 #!/bin/bash
 # move to folder to download
-cd ~/HDD/Android
+cd $HOME/HDD/Android
 
-if [! -d "~/HDD/Android/dot_P"]; then
+if ! test -d "$HOME/HDD/Android/dot_P";
   # make a new folder to download aex source and move to that folder
-  mkdir dot_P && cd dot_P
+  then mkdir dot_P && cd dot_P
 
   # repo init with Aosp extended pie source
   repo init -u git://github.com/DotOS/manifest.git -b dot-p

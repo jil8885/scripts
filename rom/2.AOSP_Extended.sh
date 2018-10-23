@@ -1,10 +1,10 @@
 #!/bin/bash
 # move to folder to download
-cd ~/HDD/Android
+cd $HOME/HDD/Android
 
-if [! -d "~/HDD/Android/AEX_P"]; then
+if ! test -d "$HOME/HDD/Android/AEX_P";
   # make a new folder to download aex source and move to that folder
-  mkdir AEX_P && cd AEX_P
+  then mkdir AEX_P && cd AEX_P
 
   # repo init with Aosp extended pie source
   repo init -u git://github.com/AospExtended/manifest.git -b 9.x

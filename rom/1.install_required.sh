@@ -11,6 +11,6 @@ sudo chmod a+r /etc/udev/rules.d/51-android.rules
 
 # make a empty folder to download android source and build
 # I specify the path of my subhard, to ~/HDD
-if [! -d "~/HDD/Android"]; then
-  mkdir -p ~/HDD/
+if ! test -d "$HOME/HDD/Android";
+  then mkdir -p ~/HDD/Android
 fi

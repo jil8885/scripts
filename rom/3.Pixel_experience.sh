@@ -1,10 +1,10 @@
 #!/bin/bash
 # move to folder to download
-cd ~/HDD/Android
+cd $HOME/HDD/Android
 
-if [! -d "~/HDD/Android/PEX_P"]; then
+if ! test -d "$HOME/HDD/Android/PEX_P";
   # make a new folder to download aex source and move to that folder
-  mkdir PEX_P && cd PEX_P
+  then mkdir PEX_P && cd PEX_P
 
   # repo init with Aosp extended pie source
   repo init -u https://github.com/PixelExperience/manifest -b pie
