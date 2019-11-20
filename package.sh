@@ -9,8 +9,8 @@ sudo apt update
 sudo apt -y install naver-whale-stable
 sudo apt -y install google-chrome-stable
 sudo rm -rf /etc/apt/sources.list.d/google.list
-sudo apt -y install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-sudo apt update 
-sudo apt -y install docker-ce
+# sudo apt -y install apt-transport-https ca-certificates curl software-properties-common
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+# sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+#sudo apt update 
+# sudo apt -y install docker-ce
